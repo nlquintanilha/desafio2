@@ -1,0 +1,20 @@
+﻿
+4. Questões de conhecimentos em bioinformática:
+	1. Você recebeu um resultado de sequenciamento contido em um arquivo FASTq. Desse resultado precisam ser eliminadas sequencias de baixa qualidade para que o mesmo possa ser utilizado em análises posteriores. Com esses resultados em mãos, você terá duas missões:
+		1. Fazer a limpeza desses dados e gerar relatórios que descrevam a qualidade desses dados antes e após a limpeza, utilizando o(s) software(s) de sua preferência;
+		2. Descrever as etapas realizadas para gerar o relatório e quais as informações contidas no mesmo.
+
+
+O software FastQC analisa sequência de leitura e problemas pontuais originados na preparação da biblioteca ou nas etapas de sequenciamento. Além de estatísticas básicas apresenta os seguintes dados: qualidade por base na sequência, qualidade por fragmento de sequência, índices de qualidade por sequência, conteúdo de sequência por base, níveis de GC na sequência, conteúdo de base N (neutras, ou bases que não foram identificadas), distribuição de comprimentos de sequência, níveis de duplicação de sequência, repetição de sequências, conteúdo de adaptadores (sequências adaptadoras que foram adicionadas aos fragmentos de DNA durante o sequenciamento) e conteúdo de Kmer (subsequências de uma read). 
+
+Outro software PRINSEQ é outro muito útil e também muito similar ao FASTQC. Este software apresenta o comprimento das sequências, qualidades de base, conteúdo GC, caudas poli-T e poli-A (contaminações por sequências adaptadoras ou erros realizados pelas polimerases), bases ambíguas e níveis de duplicações de sequência .
+
+Usando o PRINSEQ na internet:
+- Escolher o formato do arquivo (por exemplo, em fastq); 
+- Fazer o upload (este pode estar compactado); 
+- Escolher os parâmetros de limpeza: 
+       -O tamanho mínimo das sequências a serem mantidas; 
+       - Os trechos de cada sequência que serão cortados (ex: para a retirada das regiões adaptadoras); 
+       - A manutenção apenas das sequências com um escore mínimo de qualidade etc;
+
+
